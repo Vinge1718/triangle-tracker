@@ -8,9 +8,9 @@ $(document).ready(function(){
     var scalene = "form a Scalene triangle";
     var noTriangle = "not be enough to form a triangle";
     var naught = "do nothing else";
-    if (firstNumber === "" || secondNumber === "" || thirdNumber === ""){
-      alert("Please enter a number in all three fields")
-    } else if (firstNumber === secondNumber && secondNumber === thirdNumber){
+
+
+    if(firstNumber === secondNumber && secondNumber === thirdNumber){
       $("p#output").empty().append(equilateral);
     }else if (firstNumber === secondNumber || firstNumber === thirdNumber || secondNumber === thirdNumber) {
       $("p#output").empty().append(isosceles);
