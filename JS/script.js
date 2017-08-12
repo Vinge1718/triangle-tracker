@@ -7,7 +7,7 @@ $(document).ready(function(){
     var isosceles = "form an Isosceles triangle";
     var scalene = "form a Scalene triangle";
     var noTriangle = "not be enough to form a triangle";
-    var naught = "do nothing else";
+    var naught = "not do much else";
 
 
     if(firstNumber === secondNumber && secondNumber === thirdNumber){
