@@ -11,8 +11,10 @@ $(document).ready(function(){
 
   if (isNaN(firstNumber)||isNaN(secondNumber)||isNaN(thirdNumber)){
     alert("Enter a number bigger than zero in all fields!");
+    $("p#output").empty();
   }else if ((firstNumber=== 0) || (secondNumber === 0) || (thirdNumber=== 0)) {
-      alert("Please enter a number bigger than Zero")
+      alert("Please enter a number bigger than Zero");
+      $("p#output").empty();
     } else if((firstNumber === secondNumber) && (secondNumber === thirdNumber)){
         $("p#output").empty().append(equilateral);
       }else if ((firstNumber === secondNumber) || (firstNumber === thirdNumber) || (secondNumber === thirdNumber)) {
